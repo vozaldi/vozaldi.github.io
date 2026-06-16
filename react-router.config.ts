@@ -3,7 +3,7 @@ import type { Config } from "@react-router/dev/config";
 export default {
   // Config options...
   // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: true,
+  ssr: false,
   future: {
     v8_middleware: true,
     v8_passThroughRequests: true,
@@ -11,4 +11,7 @@ export default {
     v8_trailingSlashAwareDataRequests: true,
     v8_viteEnvironmentApi: true,
   },
+
+  /** Custom Config */
+  appDirectory: "./src/app",
 } satisfies Config;
