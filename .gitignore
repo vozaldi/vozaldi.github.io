@@ -5,3 +5,7 @@
 # React Router
 /.react-router/
 /build/
+
+# Temporary Docs
+/docs/contexts/personal/
+/docs/contexts/projects/
