@@ -30,7 +30,7 @@ export type UIStateMiddleware = [
 export const useUiState = create<RootUIState, UIStateMiddleware>(
   persist(
     (set, get) => ({
-      theme: 'light',
+      theme: 'dark',
       redirect: null,
       menuOpen: false,
       layouts: {},
