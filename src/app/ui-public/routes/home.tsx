@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
       <StatsSection />
       <ProfileSection />
-      <ShowcaseSection />
+      {false && <ShowcaseSection />}
       <SkillsSection />
       <ExperienceTimeline />
       <FeaturedProjects />

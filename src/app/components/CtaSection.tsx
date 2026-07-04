@@ -1,13 +1,21 @@
+import clsx from "clsx";
 import { SOCIAL } from "src/data/portfolio";
+import type { BaseProps } from "src/types/utilities";
 
-export default function CtaSection() {
+export default function CtaSection({
+  className,
+  style,
+  ...props
+}: BaseProps) {
   return (
     <section
-      className="mx-auto"
+      className={clsx("mx-auto", className)}
       style={{
         maxWidth: 1280,
         padding: "70px clamp(20px,5vw,40px) 90px",
+        ...style,
       }}
+      {...props}
     >
       <div
         className="relative overflow-hidden text-center"
@@ -68,7 +76,7 @@ export default function CtaSection() {
           style={{ marginTop: 34 }}
         >
           <a
-            href="#"
+            href="/assets/documents/resume-aldila-rochidias-full-stack-engineer.pdf"
             download
             className="inline-flex items-center gap-[9px] no-underline hover:-translate-y-0.5"
             style={{
@@ -82,7 +90,7 @@ export default function CtaSection() {
               transition: "transform .2s",
             }}
           >
-            Download R&eacute;sum&eacute;
+            Download Resume
             <svg
               width="16"
               height="16"

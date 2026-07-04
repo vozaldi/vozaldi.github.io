@@ -30,9 +30,9 @@ body {
   --text: #f3f2f8;
   --muted: rgba(243,242,248,0.56);
   --faint: rgba(243,242,248,0.34);
-  --accent: #8b5cf6;
+  --accent: #7b3ce8;
   --accent-text: #c4a8fb;
-  --accent-soft: rgba(139,92,246,0.15);
+  --accent-soft: rgba(123,60,232,0.15);
 }
 
 [data-theme="light"] {
@@ -45,7 +45,7 @@ body {
   --muted: rgba(20,18,28,0.62);
   --faint: rgba(20,18,28,0.40);
   --accent-text: #7a51d9;
-  --accent-soft: rgba(139,92,246,0.10);
+  --accent-soft: rgba(123,60,232,0.10);
 }
 
 /* ── Keyframes ── */

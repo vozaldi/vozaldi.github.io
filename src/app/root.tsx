@@ -20,6 +20,10 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap",
   },
+  {
+    rel: "icon",
+    href: "/favicon.png",
+  },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -28,6 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Aldila Rochidias</title>
         <Meta />
         <Links />
       </head>

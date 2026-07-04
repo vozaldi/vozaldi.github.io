@@ -120,7 +120,7 @@ export default function Hero() {
               </svg>
             </a>
             <a
-              href="#"
+              href="/assets/documents/resume-aldila-rochidias-full-stack-engineer.pdf"
               download
               className="inline-flex items-center gap-[9px] no-underline hover:bg-[var(--surface)]"
               style={{

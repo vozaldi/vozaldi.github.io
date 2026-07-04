@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router";
-import { FEATURED_PROJECTS } from "src/data/portfolio";
+import { FEATURED_PROJECTS, SCREENSHOT } from "src/data/portfolio";
+import ScreenshotGallery from "./ScreenshotGallery";
 
 function PlaceholderImage({ label }: { label: string }) {
   return (
@@ -145,8 +146,12 @@ export default function FeaturedProjects() {
                 borderBottom: "1px solid var(--border)",
               }}
             >
-              {f.hasScreenshot ? (
-                <PlaceholderImage label={f.name} />
+              {!!SCREENSHOT[f.mark]?.length ? (
+                <ScreenshotGallery
+                  className="pointer-events-none"
+                  screenshots={SCREENSHOT[f.mark]}
+                  projectName={f.name}
+                />
               ) : (
                 <>
                   <div

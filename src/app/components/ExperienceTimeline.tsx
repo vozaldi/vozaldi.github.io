@@ -232,6 +232,27 @@ export default function ExperienceTimeline() {
             >
               {e.desc}
             </div>
+            {"techstack" in e && (
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginTop: 10 }}>
+                {(e as typeof e & { techstack: string[] }).techstack.map((tech: string) => (
+                  <span
+                    key={tech}
+                    style={{
+                      fontFamily: "var(--font-mono)",
+                      fontSize: 11,
+                      padding: "3px 10px",
+                      borderRadius: 99,
+                      background: "var(--accent-soft)",
+                      color: "var(--accent-text)",
+                      border: "1px solid var(--accent)",
+                      whiteSpace: "nowrap",
+                    }}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>
